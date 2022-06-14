@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #FFA400;
+    --black: #070D0D;
+    --cyan: #00A5CF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--cyan);
+    border-radius: 200px;
+}
+
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.navbar ul li {
+    margin-left: 50px;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar ul li:hover{
+    border-bottom: 2px solid var(--cyan);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn {
+    font-family: sans-serif;
+    font-weight: 800;
+    color: #fff;
+    background: var(--cyan);
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+.btn a {
+    color: #fff;
+}
+.btn a:hover{
+    color: var(--black);
+}
+
+.btn:hover {
+    background: inherit;
+    border: 2px solid var(--cyan);
+    cursor: pointer;
+}
+
+.hero {
+    background: var(--black);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 84.8vh;
+    overflow: hidden;
+}
+
+
+
+.hero .txt p {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.hero .txt .btn:hover {
+    color: var(--cyan);
+}
+
+.how-use .title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1rem;
+    display: inline;
+    background: var(--orange);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: context-menu;
+}
+
+.txt {
+    padding: 10px 15px 10px 50px;
+}
+
+.img {
+    background: var(--orange);
+    height: 350%;
+    top: 50px;
+    width: 60%;
+    border-radius: 100% 0 0 1000%;
+    color: var(--black);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+}
+
+.how-use {
+    background: var(--black);
+    height: 100vh;
+    padding: 100px 20px 20px 100px;
+    align-items: center;
+    justify-content: start;
+}
+
+.content{
+    color: #fff;
+    margin-top: 20px;
+    height: 120px;
+    width: 350px;
+}
+
+.container {
+    height: 100vh;
+    padding: 40px 0 50px 50px;
+}
+
+.seller {
+    margin-top: 50px;
+    padding: 0 0 0 50px;
+    margin-bottom: 20px;
+}
+
+.seller .text p {
+    width: 500px;
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+.table {
+    display: flex;
+    border: 2px solid var(--black);
+    text-align: center;
+    margin: 100px 50px 0 50px;
+}
+
+.table .title {
+    font-weight: 800;
+    color: var(--cyan);
+}
+
+.table div {
+    padding: 10px;
+}
+
+.table div:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+.register {
+    height: 100vh;
+    background: var(--cyan);
+    padding-top: 150px;
+    text-align: center;
+    display: block;
+}
+
+.register h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--black);
+    margin-bottom: 50px;
+}
+
+
+.register input[type="text"],
+.register input[type="email"] {
+    background: #fff;
+    color: var(--black);
+    padding: 20px;
+    width: 50vw;
+    outline: none;
+    margin: 10px 0 10px 0;
+    border: none;
+    border-radius: 50px;
+}
+
+.register form div {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0 20px 0;
+}
+
+
+.register form button {
+    width: 50vw;
+    padding: 10px;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+span {
+    color: var(--cyan);
+    font-size: 2rem;
+    font-weight: 900;
+}
